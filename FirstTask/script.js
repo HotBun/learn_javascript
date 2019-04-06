@@ -1,14 +1,13 @@
 'use strict';
 
 
-let money = +prompt("Ваш бюджет на месяц", " ");
-let time = prompt("YYYY-MM-DD", " ");
+let money   = +prompt("Ваш бюджет на месяц", " "),
+    time    = prompt("YYYY-MM-DD", " ");
 
-let firstArticle = prompt("Введите обязательную статью расходов в этом месяце", " ");
-let firstArticleSum = +prompt("Во сколько обойдется?", " ");
-
-let secondArticle = prompt("Введите обязательную статью расходов в этом месяце", " ");
-let secondArticleSum = +prompt("Во сколько обойдется?", " ");
+let firstArticle     = prompt("Введите обязательную статью расходов в этом месяце", " "),
+    firstArticleSum  = +prompt("Во сколько обойдется?", " "),
+    secondArticle    = prompt("Введите обязательную статью расходов в этом месяце", " "),
+    secondArticleSum = +prompt("Во сколько обойдется?", " ");
 
 let oneDay = (firstArticleSum + secondArticleSum) / 30;
 
@@ -19,10 +18,8 @@ let appData = {
         firstArticle: firstArticleSum,
         secondArticle: secondArticleSum
     },
-     optionalExpenses: {
-      
-     },
-     income: [],
+    optionalExpenses: {},
+    income: [],
     savings: false
 };
 
